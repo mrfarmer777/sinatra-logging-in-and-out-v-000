@@ -4,4 +4,8 @@ class Helpers
     @user
   end
 
+  def is_logged_in?(session)
+    session.key?(:user_id)
+  end
+
 end
